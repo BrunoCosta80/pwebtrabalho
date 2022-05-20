@@ -1,0 +1,26 @@
+package br.com.ifce.controller;
+
+import br.com.ifce.model.Filme;
+import br.com.ifce.repository.FilmeRepository;
+
+public class FilmeController {
+	FilmeRepository filmeRepository = new FilmeRepository();
+
+    public void salvaFilme(Filme filme){
+        filmeRepository.salvar(filme);
+    }
+
+    public void atualizaFilme(Filme filme){
+    	filmeRepository.atualizar(filme);
+    }
+
+    public void deleteFilme(int id) {
+    	filmeRepository.remover(id);
+    }
+
+    public Filme getFilme(int id) {
+       return filmeRepository.listar(id);
+    }
+}
+
+

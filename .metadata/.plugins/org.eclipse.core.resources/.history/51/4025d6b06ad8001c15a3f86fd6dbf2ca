@@ -1,0 +1,10 @@
+package br.com.ifce.controller;
+
+import br.com.ifce.model.Filme;
+import br.com.ifce.repository.FilmeRepository;
+
+public class FilmeController {
+	
+}
+
+

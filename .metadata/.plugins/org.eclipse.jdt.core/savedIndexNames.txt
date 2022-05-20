@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\Users\ClickCedro\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+3027220879.index
+3292438682.index
+4061811635.index
+117144753.index
+1865797976.index
+3046785096.index
+1490235442.index
+2421244763.index
+3490837502.index
+3320813001.index
+390402976.index
+2454949342.index
+128806223.index
+2323376828.index
+633179385.index
+2616142759.index
+671291562.index
+1571822070.index

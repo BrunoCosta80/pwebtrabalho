@@ -1,0 +1,40 @@
+package br.com.ifce.teste;
+
+import br.com.ifce.model.Filme;
+import br.com.ifce.repository.FilmeRepository;
+
+public class ViewMain {
+	public static void main(String[]args) {
+		Filme filme = new Filme();
+		filme.setTitulo("As Tranças do Rei Careca");
+		filme.setCategoria("Humor");
+		filme.setPreco(7.50);
+		filme.setDuracaoMinutos(180);
+		
+		FilmeRepository filmeRepository = new FilmeRepository();
+		filmeRepository.salvar(filme);
+		
+		filme.setTitulo("A volta de quem não foi");
+		filme.setCategoria("Humor");
+		filme.setPreco(5.50);
+		filme.setDuracaoMinutos(120);
+		filmeRepository.atualizar(filme);
+		
+		Filme filme1 = filmeRepository.buscarPorId(1L);
+		System.out.println(filme.getTitulo());
+		System.out.println(filme.getCategoria());
+		System.out.println(filme.getPreco());
+		System.out.println(filme.getDuracaoMinutos());
+		
+		
+		filmeRepository.listar(Filme);
+		
+		filmeRepository.remover(1L);
+		
+		
+	
+	
+			
+		
+	}
+}

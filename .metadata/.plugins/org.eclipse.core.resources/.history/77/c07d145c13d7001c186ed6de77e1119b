@@ -1,0 +1,15 @@
+package br.com.ifce.repository;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import br.com.ifce.config.HibernateConfig;
+import br.com.ifce.model.Filme;
+
+public class FilmeRepository {
+	public void salvar (Filme filme) {
+		Transaction transacao = null;
+		Session session = HibernateConfig.getSessionFactory().openSession();
+ 		
+	}
+
+}

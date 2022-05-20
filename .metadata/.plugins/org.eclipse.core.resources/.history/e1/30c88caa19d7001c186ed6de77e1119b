@@ -1,0 +1,19 @@
+package br.com.ifce.teste;
+
+import br.com.ifce.model.Filme;
+import br.com.ifce.repository.FilmeRepository;
+
+public class ViewMain {
+	public static void main(String[]args) {
+		Filme filme01 = new Filme();
+		filme01.setTitulo("As Tranças do Rei Careca");
+		filme01.setCategoria("Humor");
+		filme01.setPreco(7.50);
+		filme01.setDuracaoMinutos(180);
+		
+		FilmeRepository filmeRepository = new FilmeRepository();
+		
+		filmeRepository.salvar(filme01);
+		
+	}
+}
